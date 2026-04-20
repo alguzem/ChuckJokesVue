@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Jokes</title>
+
+    <!-- Vue CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <h1>😂 Chuck Norris Jokes</h1>
+
+        <ul>
+            <li v-for="(joke, index) in chuck" :key="index">
+                {{ joke.value }}
+            </li>
+        </ul>
+    </div>
+
+    <!-- JS SIEMPRE al final -->
+    <script src="app.js"></script>
+
+</body>
+</html>
